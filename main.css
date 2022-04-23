@@ -1,0 +1,83 @@
+html,
+body {
+	font-family: 'Manrope', sans-serif;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	font-size: 28px;
+	background-color: hsl(218, 23%, 16%);
+	color: hsl(193, 38%, 86%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex: 1;
+}
+
+.card {
+	max-width: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: hsl(217, 19%, 24%);
+	padding: 50px 15px;
+	border-radius: 14px;
+	position: relative;
+}
+
+.card .divider__icon {
+	background-image: url('./images/pattern-divider-desktop.svg');
+	height: 16px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.card span {
+	font-size: 14px;
+	color: hsl(150, 100%, 66%);
+}
+
+.card p {
+	font-weight: 800;
+	text-align: center;
+	margin: 14px 0;
+}
+
+.dice__icon {
+	position: absolute;
+	bottom: -25px;
+	background-color: hsl(150, 100%, 66%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	border-radius: 50% 50%;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.dice__icon:hover {
+	box-shadow: 0 0 15px 10px hsla(150, 100%, 66%, 0.5);
+}
+
+@media only screen and (max-width: 375px) {
+	.card {
+		max-width: 300px;
+	}
+	.card .divider__icon {
+		background-image: url('./images/pattern-divider-mobile.svg');
+		height: 16px;
+		width: 100%;
+	}
+}
